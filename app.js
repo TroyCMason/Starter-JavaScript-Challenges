@@ -101,7 +101,7 @@ console.log (isOdd(2));
 
 //Q.12 If a number is even, return 1 otherwise return -1 
 //(===) Strict Equality checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
-//ternary operator
+
 function booleanInterger(num){
     return (num % 2 === 0) ? 1 : -1;
 }
@@ -112,3 +112,13 @@ function lcfAssociate(made,gajiin){
     return (made === "Made") ? "Made" : "Gajiin";
 }
 console.log (lcfAssociate('made'));
+
+//Ternary Operator (?) if the value of the left is truthy. It returns true otherwise it returns false
+//Value has to be truthy meaning it has to exist. Falsey values do not exist. 
+
+//Q13. Check if a user is logged in and Subscribed
+
+function isLoggedInAndSubscribed(subscribed,loggedIn){
+    return (subscribed=='Subscribed') && (loggedIn=='Logged_In')
+}
+console.log(isLoggedInAndSubscribed(loggedIn,subscribed))
