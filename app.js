@@ -117,8 +117,16 @@ console.log (lcfAssociate('made'));
 //Value has to be truthy meaning it has to exist. Falsey values do not exist. 
 
 //Q13. Check if a user is logged in and Subscribed
+// && for AND conditons
 
 function isLoggedInAndSubscribed(subscribed,loggedIn){
     return (subscribed=='Subscribed') && (loggedIn=='Logged_In')
+}
+console.log(isLoggedInAndSubscribed(loggedIn,subscribed))
+
+//Q14. Check if a user is logged in OR Subscribed
+// OR OPERATOR (||)
+function isLoggedInAndSubscribed(subscribed,loggedIn){
+    return (subscribed=='Subscribed') || (loggedIn=='Logged_In')
 }
 console.log(isLoggedInAndSubscribed(loggedIn,subscribed))
